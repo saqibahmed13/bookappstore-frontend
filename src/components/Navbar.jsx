@@ -64,7 +64,7 @@ function Navbar() {
         }`}
       >
         <div className="navbar">
-          <div className="navbar-start space-x-2">
+          <div className="navbar-start">
             <div className="dropdown">
               <div
                 tabIndex={0}
@@ -134,7 +134,7 @@ function Navbar() {
 
               {/* sun icon */}
               <svg
-                className="swap-off fill-current w-6 h-6"
+                className="swap-off fill-current w-6 h-6 -mr-1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 onClick={() => setTheme(theme === "light" ? "dark" : "light")}
@@ -144,7 +144,7 @@ function Navbar() {
 
               {/* moon icon */}
               <svg
-                className="swap-on fill-current w-6 h-6"
+                className="swap-on fill-current w-6 h-6 -mr-1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
