@@ -34,7 +34,7 @@ function Banner() {
           <button className="mt-3 btn btn-active btn-secondary">Secondary</button>
         </div>
         <div className="w-full order-1 md:w-1/2 flex justify-end items-center">
-    <img src={book} className="w-full md:w-11/12 lg:w-8/12 h-auto py-4 mr-10" alt="Book" />
+    <img src={book} className="w-full md:w-11/12 lg:w-8/12 h-auto py-4 mr-8" alt="Book" />
 </div>
 
 
