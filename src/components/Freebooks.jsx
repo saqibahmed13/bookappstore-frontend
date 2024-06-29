@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import axios from 'axios'
 import Card from './Card';
 import {useEffect} from 'react';
+import { SERVER_URL } from '../utils/helper';
 
 
 function Freebooks() {
@@ -13,7 +14,7 @@ const [book, setBook] = useState([]);
 useEffect(()=>{
   const getBook = async () =>{
     try{
-      const res = await axios.get("http://localhost:4001/book");
+      const res = await axios.get(SERVER_URL + "/book");
       const data = res.data.filter((data)=>data.category==="Free");
       setBook(data);
     }catch(error){

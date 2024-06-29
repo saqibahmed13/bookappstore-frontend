@@ -4,6 +4,7 @@ import Login from "./Login";
 import {useForm} from "react-hook-form"
 import axios from 'axios'
 import toast from 'react-hot-toast'
+import { SERVER_URL } from '../utils/helper';
 
 
 function Signup() {
@@ -22,7 +23,7 @@ function Signup() {
           password:data.password,
         };
 
-        try {const {data} = await axios.post("http://localhost:4001/user/signup", userInfo)
+        try {const {data} = await axios.post(SERVER_URL + "/user/signup", userInfo)
         console.log("signupWala", data);
         if(data){
           toast.success("Signup Successfully")

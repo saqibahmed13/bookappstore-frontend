@@ -4,6 +4,7 @@ import { useForm} from "react-hook-form"
 import axios from "axios";
 import toast from 'react-hot-toast'
 import { useAuth} from '../context/AuthProvider';
+import { SERVER_URL } from '../utils/helper';
 
 function Login() {
     const [authUser, setAuthUser] = useAuth()
@@ -20,8 +21,8 @@ function Login() {
           password:data.password,
         };
         try {
-          const {data} = await axios.post("http://localhost:4001/user/login", userInfo)
-          console.log("ji", data);
+          const {data} = await axios.post(SERVER_URL + "/user/login", userInfo)
+          console.log("ji", SERVER_URL);
           if(data){
            toast.success("Loggedin Successfully");
            document.getElementById("my_modal_3").close();
@@ -34,6 +35,7 @@ function Login() {
         } catch (err) {
           if(err.response){ 
             console.log("hi", err)
+            console.log("hi", import.meta.env.SERVER_URL)
             toast.error("Error:"+ err.response.data.message);
           }
         }
