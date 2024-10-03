@@ -30,16 +30,6 @@ To run this project locally, follow these steps:
 
 The project structure is as follows:
 
-
-4. Open your browser and navigate to `http://localhost:3000` to view the application.
-
-## Project Structure
-
-The project structure is as follows:
-
-/src |-- App.js |-- Home/ |-- Home.js |-- books/ |-- Books.js |-- components/ |-- Signup.js |-- ContactUs.js |-- AboutUs.js |-- Login.js |-- Logout.js |-- Contact/ |-- Contact.js
-
-
 ## Routes
 
 - `/`: Home page.
@@ -74,6 +64,4 @@ For source code and further documentation, visit the GitHub repository: [GitHub 
 
 Contributions are welcome. Feel free to submit pull requests or suggest improvements.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
