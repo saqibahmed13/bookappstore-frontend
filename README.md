@@ -64,7 +64,7 @@ This application features user authentication, allowing users to log in, sign up
 
 ## Demo
 
-You can view a live demo of the application here: [Live Demo Link](<insert-demo-link>)
+You can view a live demo of the application here: [Live Demo Link](<https://bookappstore.vercel.app/>)
 
 ## GitHub Repository
 
