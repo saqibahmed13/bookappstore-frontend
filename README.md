@@ -68,7 +68,7 @@ You can view a live demo of the application here: [Live Demo Link](<insert-demo-
 
 ## GitHub Repository
 
-For source code and further documentation, visit the GitHub repository: [GitHub Link](<insert-github-link>)
+For source code and further documentation, visit the GitHub repository: [GitHub Link](<https://github.com/saqibahmed13/BookAppStore_.git>)
 
 ## Contributing
 
